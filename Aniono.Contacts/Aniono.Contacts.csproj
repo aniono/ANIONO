@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageAssetFiles Remove="Views\Home\Index.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OrchardCore.Module.Targets" Version="1.0.0-beta1-3667" />
+    <PackageReference Include="OrchardCore.Mvc.Core" Version="1.0.0-beta1-3667" />
+  </ItemGroup>
+
+</Project>
