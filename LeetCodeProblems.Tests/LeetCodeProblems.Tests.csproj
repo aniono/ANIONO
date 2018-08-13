@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ConsoleApp1\LeetCodeProblems.csproj" />
+    <ProjectReference Include="..\LeetCodeProblems\LeetCodeProblems.csproj" />
   </ItemGroup>
 
 </Project>
