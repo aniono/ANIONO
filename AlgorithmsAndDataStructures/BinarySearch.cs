@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace AlgorithmsAndDataStructures
+﻿namespace AlgorithmsAndDataStructures
 {
     public class BinarySearch
     {
@@ -21,6 +17,20 @@ namespace AlgorithmsAndDataStructures
             }
 
             return -1;
+        }
+
+        public int SearchByRecursion(int target, int first, int last, int[] nums)
+        {
+            if (first < last)
+            {
+                int i = (first + last) / 2;
+
+                if (target < nums[i]) return SearchByRecursion(target, first, i - 1, nums);
+                else if (target > nums[i]) return SearchByRecursion(target, i + 1, last, nums);
+                else return i;
+            }
+            else if (first == last) return nums[first] == target ? first : -1;
+            else return -1;
         }
     }
 }

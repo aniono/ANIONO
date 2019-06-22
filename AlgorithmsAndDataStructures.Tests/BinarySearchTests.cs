@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using Xunit;
 
@@ -34,6 +35,20 @@ namespace AlgorithmsAndDataStructures.Tests
                 var actual = _objUnderTest.Search(targets[i], inputs[i]);
                 Assert.Equal(expected[i], actual);
             }
+        }
+
+        [Theory]
+        [InlineData(0, 1, new int[] { 1, 2, 4, 8, 10 })]
+        [InlineData(1, 2, new int[] { 1, 2, 4, 8, 10 })]
+        [InlineData(4, 10, new int[] { 1, 2, 4, 8, 10 })]
+        [InlineData(-1, 9999, new int[] { 1, 2, 4, 8, 10 })]
+        public void Test_SearchByRecursion(int expected, int target, int[] nums)
+        {
+            // Act
+            var actual = _objUnderTest.SearchByRecursion(target, 0, nums.Length - 1, nums);
+
+            // Assert
+            Assert.Equal(expected, actual);
         }
     }
 }
