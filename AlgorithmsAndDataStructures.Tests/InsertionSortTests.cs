@@ -42,5 +42,25 @@ namespace AlgorithmsAndDataStructures.Tests
                 }
             }
         }
+
+        [Theory]
+        [InlineData(new int[] { 1, 2, 3, 5, 5 })]
+        [InlineData(new int[] { 3, 2, 1 })]
+        [InlineData(new int[] { 0, 2, 1, 3, 3, 2, 5, 2, 9 })]
+        [InlineData(new int[] { 3, 8, 9, 2, 3, 2, 9, 0, 1 })]
+        public void Test_SortByRecursion(int[] nums)
+        {
+            // Arrange
+            var expected = nums.OrderBy(x => x).ToArray();
+
+            // Act
+            _objUnderTest.SortByRecursion(nums, nums.Length - 1);
+
+            // Assert
+            for(int i = 0; i < nums.Length; i++)
+            {
+                Assert.Equal(expected[i], nums[i]);
+            }
+        }
     }
 }

@@ -13,5 +13,18 @@
                 nums[j + 1] = key;
             }
         }
+
+        public void SortByRecursion(int[] nums, int end)
+        {
+            if (end > 0)
+            {
+                SortByRecursion(nums, end - 1);
+
+                int key = nums[end];
+                int i = end - 1;
+                while (i >= 0 && nums[i] > key) { nums[i + 1] = nums[i]; i--; }
+                nums[i + 1] = key;
+            }
+        }
     }
 }
