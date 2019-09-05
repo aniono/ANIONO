@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2036
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29209.62
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeetCodeProblems", "LeetCodeProblems\LeetCodeProblems.csproj", "{CF911880-02F8-4D19-95FF-C5F7B30727A4}"
 EndProject
@@ -19,9 +19,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CiKu.CiPaiMing.Tests", "CiK
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CiKu.Infrastructure", "CiKu.Infrastructure\CiKu.Infrastructure.csproj", "{B14BF664-7B83-436B-94B3-2824234776AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns", "DesignPatterns\DesignPatterns.csproj", "{1C13ACC7-2488-493F-88A4-B9BEFA1653F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns", "DesignPatterns\DesignPatterns.csproj", "{1C13ACC7-2488-493F-88A4-B9BEFA1653F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Tests", "DesignPatterns.Tests\DesignPatterns.Tests.csproj", "{9010A65B-61F3-4109-934D-97C1B5D7BA9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.Tests", "DesignPatterns.Tests\DesignPatterns.Tests.csproj", "{9010A65B-61F3-4109-934D-97C1B5D7BA9F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CiKu", "CiKu", "{A36A26D2-1F58-44C0-90CC-48D2682B508E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -72,6 +74,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9EAD4296-5562-4024-B1A1-8DEE05BF5A47} = {A36A26D2-1F58-44C0-90CC-48D2682B508E}
+		{F103676D-CC04-4F9A-A906-C016F3F8F4E2} = {A36A26D2-1F58-44C0-90CC-48D2682B508E}
+		{B14BF664-7B83-436B-94B3-2824234776AF} = {A36A26D2-1F58-44C0-90CC-48D2682B508E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B3CF71E3-9B99-490A-9DBE-47BE62482BFD}
