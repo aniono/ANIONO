@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CiKu.Domain;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -41,7 +42,7 @@ namespace CiKu.CiPaiMing.Tests
 
             var shangPian = new Pian(jusOfShangPian);
             var xiaPian = new Pian(jusOfXiaPian);
-            var hxs = new HuanXiSha(shangPian, xiaPian);
+            var hxs = new HuanXiSha("", shangPian, xiaPian);
 
             return hxs;
         }

@@ -1,3 +1,4 @@
+using CiKu.Domain;
 using System;
 using Xunit;
 
@@ -31,7 +32,7 @@ namespace CiKu.CiPaiMing.Tests
             var shangPian = new Pian(jusOfXiaPian);
             var xiaPian = new Pian(jusOfXiaPian);
 
-            var actual = Assert.Throws<Exception>(() => new HuanXiSha(shangPian, xiaPian));
+            var actual = Assert.Throws<Exception>(() => new HuanXiSha("", shangPian, xiaPian));
 
         }
     }
