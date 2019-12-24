@@ -24,7 +24,7 @@ namespace ANIONO.DddCommon.DddApplicationCore.SeedWork
 
         public bool IsTransient()
         {
-            return this.Id == default;
+            return this.Id.Equals(default);
         }
 
         public Entity<T> GetCopy()
